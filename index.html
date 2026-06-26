@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small App Logic Lab Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Small App Logic Lab <span class="pro-tag">PRO</span></h1>
+            <p class="subtitle">Experience the architectural reality of Bloat vs. Efficiency</p>
+        </header>
+
+        <section class="dashboard">
+            <div class="stat-card">
+                <span class="stat-label">Score</span>
+                <span id="score-display" class="stat-value neon-text-blue">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Current Badge</span>
+                <span id="badge-display" class="stat-value neon-text-purple">Novice</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-header">
+                    <span id="status-message">Analyze a task to begin...</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+                <div class="progress-bar-wrapper">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <main class="lab-interface">
+            <div class="input-group">
+                <label for="text-input">Execution Payload (Input Text)</label>
+                <input type="text" id="text-input" placeholder="Type something to process..." value="Hello World">
+            </div>
+
+            <div class="input-group">
+                <label for="task-select">Target Micro-Task</label>
+                <select id="task-select">
+                    <option value="uppercase">Transform: Uppercase</option>
+                    <option value="reverse">Transform: Reverse Text</option>
+                    <option value="wordcount">Analyze: Word Count</option>
+                    <option value="palindrome">Analyze: Palindrome Check</option>
+                </select>
+            </div>
+
+            <div class="action-zone">
+                <button id="btn-big" class="btn btn-big">
+                    <span class="btn-title">Use Big App</span>
+                    <span class="btn-desc">Load Monolith Framework</span>
+                </button>
+                <button id="btn-small" class="btn btn-small">
+                    <span class="btn-title">Use Small App</span>
+                    <span class="btn-desc">Execute Isolated Function</span>
+                </button>
+            </div>
+        </main>
+
+        <section class="output-panel">
+            <h2>Execution Output</h2>
+            <div id="loading-overlay" class="loading-overlay hidden">
+                <div class="spinner"></div>
+                <p id="loading-text">Initializing dependencies...</p>
+            </div>
+            <div id="bubble-container" class="bubble-container">
+                <div class="placeholder-bubble">Select an architecture execution track above.</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
