@@ -1,4 +1,5 @@
 # 🧪 Small App Logic Lab Pro
+![Small App Logic Lab PRO](./screenshot.png)
 
 An interactive, gamified educational web application designed to demonstrate the stark architectural differences between hyper-focused **Micro-Apps** and bloated, over-engineered **Monolithic Frameworks**.
 
@@ -73,6 +74,11 @@ The sequential tracking of runtime data changes radically depending on the user'
                   |   Update Dynamic Feedback UI      |
                   +-----------------------------------+
 ```
+
+## 🎨 Graphic Overflow Diagram
+
+![Graphic Overflow](./graphic-overflow.png)
+
 
 ---
 
